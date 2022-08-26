@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+
+        .main {
+            /*visibility: hidden;*/
+            text-align: center;
+            width: 700px;
+            /*border-top-width: 20px;*/
+            /*border-style: solid;*/
+            /*border-top-style: groove;*/
+            /*border-color: orangered;*/
+            border: 20px groove orangered;
+            /*border-top: 10px dashed orangered;*/
+            /*border: 2px solid red;*/
+            border-radius: 25px;
+            margin: 10px auto 20px auto;
+            padding: 20px 0 100px 0;
+        }
+
+        .main > p {
+            text-align: justify;
+        }
+        
+        div {
+            -webkit-transition: cubic-bezier(0, 2.18, 0,-1.78) 900ms;
+            -moz-transition: cubic-bezier(0, 2.18, 0,-1.78) 900ms;
+            -ms-transition: cubic-bezier(0, 2.18, 0,-1.78) 900ms;
+            -o-transition: cubic-bezier(0, 2.18, 0,-1.78) 900ms;
+            transition: cubic-bezier(0, 2.18, 0,-1.78) 900ms;
+        }
+
+        div:hover {
+            background: cyan !important;
+            width: 1000px;
+        }
+
+        div:active {
+            background: purple !important;
+        }
+
+        div:hover::first-letter {
+            color: greenyellow;
+        }
+
+        .pos {
+            background: orange !important;
+            border-radius: 20px !important;
+            height: 200px !important;
+            width: 200px !important;
+            text-align: center;
+            font: 40px sans-serif;
+        }
+
+        .static {
+            position: static;
+        }
+        .relative {
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .fixed {
+            position: fixed;
+            background: red !important;
+            right: 10px;
+            bottom: 10px;
+        }
+        .sticky {
+            position: sticky;
+            width: 100% !important;
+            top: 10px;
+        }
+        .absolute {
+            position: absolute;
+            left: 10px;
+        }
+        body {
+            height: 10000px;
+        }
+
+    </style>
+</head>
+<body>
+<!--    <div style="width: 500px;border: 10px solid red; margin-bottom: 10px;">salam</div>-->
+<!--    <div style="width: 500px;border: 10px solid red; padding: 0 50px">salam</div>-->
+<!--    <div style="background: orangered; height: 200px;">Block</div>-->
+<!--    <span style="background: greenyellow;font-size: 40px;display: inline-block;width: 200px;height: 300px">reza</span>-->
+<!--    <span style="background: orange;font-size: 40px;width: 300px;height: 100px;">reza</span>-->
+<!--    <a href="">Home</a>-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam dignissimos enim impedit labore obcaecati quod vel. Ad corporis culpa dicta fugiat iste maiores, quasi, quidem sapiente sint vero, voluptate!</p>-->
+<!--    <div class="main">-->
+<!--        <h1> Hello world </h1>-->
+<!--&lt;!&ndash;        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem deserunt fugit maiores nam repellat vitae. Ad aperiam architecto, aspernatur delectus dicta, enim molestias natus necessitatibus officiis quisquam rerum soluta.&ndash;&gt;-->
+<!--&lt;!&ndash;        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam debitis magnam natus nostrum obcaecati perspiciatis tempore vero? Assumenda dolorem, et eum harum ipsum laborum mollitia perspiciatis quaerat sequi voluptatibus.&ndash;&gt;-->
+<!--&lt;!&ndash;        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae blanditiis debitis delectus deleniti distinctio, doloribus dolorum ratione reiciendis totam. Modi natus necessitatibus quam temporibus unde. In omnis perspiciatis qui.&ndash;&gt;-->
+<!--&lt;!&ndash;        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at atque consectetur corporis dolorem, error est minus odio perferendis quod quos, temporibus, totam! Autem cum, eveniet harum natus nihil veniam.&ndash;&gt;-->
+<!--&lt;!&ndash;        </p>&ndash;&gt;-->
+<!--    </div>-->
+<div class="pos static">static</div>
+<br><hr><br>
+<div class="pos relative">relative</div>
+<br><hr><br>
+<div style="position: relative;width: 50%">
+    <div class="pos absolute">absolute</div>
+</div>
+<br><hr><br>
+<div class="pos fixed">fixed</div>
+<br><hr><br>
+<div class="pos sticky">sticky</div>
+<br><hr><br>
+</body>
+</html>
