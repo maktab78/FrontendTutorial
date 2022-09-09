@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 1</title>
+    <script>
+        // const name = "reza"
+        // let age = 14
+
+        // name = "ahmad"
+        /* age = 22 */
+
+        // +-*/ == >= <= < > % ++ -- **
+        // age += 1
+
+        // console.log(age === '15')
+        // console.log(age == '15')
+
+        //  Data Types:
+        //  String, Int, Float, Boolean, Set, Dictionary, Tuple, List, None
+
+        let str = "Akbar"
+        let int = 123123
+        let float = 4.14
+        let bool = true
+        let dict = {} // Object! JSON -> JS Object Notation
+        let nums = [1, 2, 3] // List -> Array
+        let none = null // ....
+        let u // ...
+
+        // console.log(none)
+        // console.log(u)
+
+        // console.log(typeof u)
+
+        // Same as python
+        // print = console.log
+        // print(str)
+
+        // def -> function
+        // function sum(a, b) {
+        //     return a + b
+        // }
+        //
+        // console.log("sum:", sum(1,2))
+
+        // comp operators
+        // console.log(!bool)
+        // console.log(1 >= 2)
+
+        // if - else - else if
+        // if (bool) {
+        //
+        // } else if (!bool) {
+        //
+        // } else {
+        //
+        // }
+
+        // if (bool) console.log(true)
+        // else console.log(false)
+
+
+        // const num = 13
+        // print('even' if num % 2 == 0 else 'odd')
+        // if -> ? ; else -> :
+        // console.log(num % 2 === 0 ? 'even' : 'odd')
+
+        // Loop:
+        // for loop:
+        // + C - Style
+        // let i;
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i)
+        // }
+
+        const numbers = [2, 3, 4, 5, 7, 2, 21, 1]
+        const name = "Akbar Babai"
+
+        // for in -> index
+        // for (let i in numbers){
+        //     console.log(i)
+        // }
+
+        // for of -> value
+        // for (let i of name){
+        //     console.log(i)
+        // }
+
+        // While:
+        // let num = 1
+        // while (true) {
+        //     console.log("Num :", num)
+        //     if (num > 10) break
+        //     num ++
+        //
+        // }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+<div id="main" x-data="{ text: 'Type Here!' }" class="text-center pt-10">
+
+<!--    <a onclick="alert('salam')" class="text-6xl bg-red-500 text-white rounded-2xl border-4 border-red-700 py-8 px-6 inline-block w-[500px] cursor-pointer hover:bg-red-600 hover:border-red-800">Type Here!</a>-->
+<!--    <input oninput="document.querySelectorAll('a').text = this.value" class="block mt-10 mx-auto border-4 border-red-600 text-5xl rounded-2xl w-[500px]" type="text" id="text">-->
+
+
+    <a class="text-6xl bg-red-500 text-white rounded-2xl border-4 border-red-700 py-8 px-6 inline-block w-[500px] cursor-pointer hover:bg-red-600 hover:border-red-800" x-text="text"></a>
+    <input x-model="text" class="block mt-10 mx-auto border-4 border-red-600 text-5xl rounded-2xl w-[500px]" type="text" id="text">
+</div>
+
+<script>
+    // alert("Salam !")
+    // const a_tag = document.querySelector('a')
+    // a_tag.text = "reza"
+
+    const $ = document.querySelectorAll
+
+    $()
+</script>
+</body>
+</html>
